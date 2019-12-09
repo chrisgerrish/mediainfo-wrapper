@@ -4,7 +4,8 @@ var path = require('path'),
     exec = require('child_process').exec;
 
 function getCmd() {
-    return safeLocalPath(path.join(__dirname, '/linux64/mediainfo'));
+    return "LD_LIBRARY_PATH=" + safeLocalPath(path.join(__dirname, '/lib')) + " " + safeLocalPath(path.join(__dirname, '/lib/mediainfo'));
+    // return safeLocalPath(path.join(__dirname, '/linux64/mediainfo'));
 }
 
 
