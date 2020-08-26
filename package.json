@@ -4,6 +4,9 @@
     "description": "wrapper for mediainfo-prebuilt",
     "main": "index.js",
     "license": "MIT",
+    "scripts": {
+        "postinstall": "./post_install.sh"
+    },
     "bugs": {
         "url": "https://github.com/vankasteelj/mediainfo-wrapper/issues"
     },
